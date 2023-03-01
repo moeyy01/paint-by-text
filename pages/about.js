@@ -15,33 +15,33 @@ export default function About() {
         <h1 className="text-center text-5xl font-bold m-6">{appName}</h1>
 
         <p className="prose">
-          This open-source website provides a simple interface for modifying
-          images using text-based instructions. You can upload an image, provide
-          a text prompt describing how to change that image, and generate new
-          images based on the prompt.
+        本网站提供了一个简单的接口
+           使用基于文本的说明的图像。您可以上传图像，提供
+           文本提示，使用英语描述如何更改该图像并生成新的图像
+           基于提示的图像。
         </p>
 
         <p className="prose">
-          The image generation is powered by{" "}
+        图像生成由{" "}
           <Link href="https://www.timothybrooks.com/instruct-pix2pix/">
             InstructPix2Pix
           </Link>
-          , an open-source machine learning model that combines the knowledge
-          from <Link href="https://openai.com/api/">GPT-3</Link> and{" "}
+          提供支持, InstructPix2Pix 是一种开源机器学习模型, 
+          结合了 <Link href="https://openai.com/api/">GPT-3</Link> 和{" "}
           <Link href="https://replicate.com/stability-ai/stable-diffusion?utm_source=project&utm_campaign=paintbytext">
-            Stable Diffusion
+            Stable Diffusion.
           </Link>{" "}
-          to generate a large dataset of image editing examples. This model was
+          {/* to generate a large dataset of image editing examples. This model was
           created at the University of California, Berkeley by{" "}
           <Link href="https://timothybrooks.com/about">Tim Brooks</Link>,{" "}
           <Link href="http://www.holynski.org/">Aleksander Holynski</Link>, and{" "}
           <Link href="https://people.eecs.berkeley.edu/~efros/">
             Alexei A. Efros
           </Link>
-          .
+          . */}
         </p>
 
-        <p className="prose">
+        {/* <p className="prose">
           The model is hosted on{" "}
           <Link href="https://replicate.com/timothybrooks/instruct-pix2pix?utm_source=project&utm_campaign=paintbytext">
             Replicate
@@ -55,13 +55,13 @@ export default function About() {
             GitHub
           </Link>
           . Pull requests welcome!
-        </p>
+        </p> */}
 
         <div className="text-center mt-10">
           <Link href="/">
             <a className="bg-black text-white rounded-md text-small inline-block p-3 flex-none">
               <ArrowLeftIcon className="icon" />
-              Back to painting
+              回到绘画
             </a>
           </Link>
         </div>
