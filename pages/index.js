@@ -11,8 +11,8 @@ import { getRandomSeed } from "lib/seeds";
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 export const appName = "通过文字进行绘画";
-export const appSubtitle = "在AI的帮助下，使用英语描述编辑您的照片。";
-export const appMetaDescription = "在AI的帮助下，使用英语描述编辑您的照片。";
+export const appSubtitle = "在AI的帮助下，使用英文描述编辑您的照片。";
+export const appMetaDescription = "在AI的帮助下，使用英文描述编辑您的照片。";
 
 export default function Home() {
   const [events, setEvents] = useState([]);
