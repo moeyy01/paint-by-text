@@ -23,8 +23,8 @@ export default function Messages({ events, isProcessing, onUndo }) {
                 <Image
                   alt={
                     ev.prompt
-                      ? `The result of the prompt "${ev.prompt}" on the previous image`
-                      : "The source image"
+                      ? ` "${ev.prompt}" 的图片`
+                      : "源图片"
                   }
                   width="512"
                   height="512"
@@ -41,8 +41,7 @@ export default function Messages({ events, isProcessing, onUndo }) {
                         onUndo(index);
                       }}
                     >
-                      <UndoIcon className="icon" /> Undo and try a different
-                      change
+                      <UndoIcon className="icon" /> 撤销修改
                     </button>
                   </div>
                 )}
@@ -51,8 +50,8 @@ export default function Messages({ events, isProcessing, onUndo }) {
               {(isProcessing || index < events.length - 1) && (
                 <Message sender="replicate" isSameSender>
                   {index === 0
-                    ? "What should we change?"
-                    : "What should we change now?"}
+                    ? "您需要怎么修改?"
+                    : "您现在需要怎么修改?"}
                 </Message>
               )}
             </Fragment>

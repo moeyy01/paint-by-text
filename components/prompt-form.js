@@ -28,8 +28,8 @@ export default function PromptForm({
       <Message sender="replicate" isSameSender>
         <label htmlFor="prompt-input">
           {isFirstPrompt
-            ? "What should we change?"
-            : "What should we change now?"}
+            ? "您需要怎么修改?"
+            : "您现在需要怎么修改?"}
         </label>
       </Message>
 
@@ -52,7 +52,7 @@ export default function PromptForm({
             className="bg-black text-white rounded-r-md text-small inline-block p-3 flex-none"
             type="submit"
           >
-            Paint
+            生成绘画
           </button>
         )}
       </div>

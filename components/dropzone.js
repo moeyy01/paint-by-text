@@ -17,11 +17,11 @@ export default function Dropzone(props) {
       <div className="m-auto">
         <input {...getInputProps()} />
         {isDragActive ? (
-          <p>Drop the image here ...</p>
+          <p>将图片放到这里 ...</p>
         ) : (
           <p>
             <UploadIcon className="icon" />
-            Upload image
+            上传图片
           </p>
         )}
       </div>
