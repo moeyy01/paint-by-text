@@ -54,7 +54,7 @@ export default function Footer({ events, startOver, handleImageDropped }) {
       </div>
 
       <div className="text-center lil-text mt-8">
-        Powered by{" "}
+        {/* Powered by{" "}
         <Link href="https://www.timothybrooks.com/instruct-pix2pix/">
           <a target="_blank">InstructPix2Pix</a>
         </Link>
@@ -66,7 +66,7 @@ export default function Footer({ events, startOver, handleImageDropped }) {
         <Link href="https://vercel.com">
           <a target="_blank">Vercel</a>
         </Link>
-        {/* , and{" "}
+        , and{" "}
         <Link href="https://github.com/replicate/instruct-pix2pix-demo">
           <a target="_blank">GitHub</a>
         </Link> */}
