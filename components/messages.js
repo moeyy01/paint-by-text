@@ -31,6 +31,7 @@ export default function Messages({ events, isProcessing, onUndo }) {
                   priority={true}
                   className="w-full h-auto rounded-lg"
                   src={ev.image}
+                  unoptimized={true}
                 />
 
                 {onUndo && index > 0 && index === events.length - 1 && (
